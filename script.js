@@ -29,36 +29,30 @@ Se sei a corto di idee per lo stile,
 potresti prendere spunto dallo screenshot fornito in consegna.
 Buon lavoro e buon divertimento! */
 
-/* for (let i = 1; i < 100; i++) ; console.log(i)
-  if (i % 3 == 0) console.log("Fizz");
+/* for (let i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
+  else if (i % 3 == 0) console.log("Fizz");
   else if (i % 5 == 0) console.log("Buzz");
-
-  else if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
-
-    else if (i % 3 == 0) && (i % 5 == 0) console.log("FizzBuzz");
-
-  
-  else console.log("FizzBuzz");
- */
-
-/* for (let i = 1; i < 100; i++) {
-  console.log(i);
-  if (i % 3 == 0) console.log("Fizz");
-  else if (i % 5 == 0) console.log("Buzz");
-
-} */
-
-/* for (let i = 1; i < 100; i++) {
-  if (i % 3 == 0 && i % 5 == 0); 
-    console.log("FizzBuzz");
-  else if (i % 3 == 0); console.log("Fizz");
-  else if (i % 5 == 0); console.log("Buzz");
   else console.log(i);
 } */
+
+/* for (let i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
+  else if (i % 3 == 0) console.log("Fizz");
+  else if (i % 5 == 0) console.log("Buzz");
+  else console.log(i);
+} */
+
+const box = document.getElementById("fizzBox");
 
 for (let i = 1; i <= 100; i++) {
   if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
   else if (i % 3 == 0) console.log("Fizz");
   else if (i % 5 == 0) console.log("Buzz");
   else console.log(i);
+
+  const newBox = document.createElement("div");
+  newBox.classList.add("col-12", "ms-box");
+  newBox.innerHTML = i;
+  box.append(newBox);
 }
