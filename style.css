@@ -6,6 +6,7 @@
 
 div.col-12.ms-box {
   height: 150px;
+  max-width: 200px;
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #040404;
