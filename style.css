@@ -4,12 +4,22 @@
   box-sizing: border-box;
 }
 
-div.col-12.ms-box {
-  height: 150px;
-  max-width: 200px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid #040404;
-  background-color: blue;
-  text-align: center;
+/* box added to html by js */
+.box {
+  width: calc((100% / 10) - 5px);
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* id of section */
+#fizzBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }

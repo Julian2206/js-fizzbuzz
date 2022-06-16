@@ -36,23 +36,22 @@ Buon lavoro e buon divertimento! */
   else console.log(i);
 } */
 
-/* for (let i = 1; i <= 100; i++) {
-  if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
-  else if (i % 3 == 0) console.log("Fizz");
-  else if (i % 5 == 0) console.log("Buzz");
-  else console.log(i);
-} */
-
+// get the element in the DOM
 const box = document.getElementById("fizzBox");
 
 for (let i = 1; i <= 100; i++) {
-  if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
-  else if (i % 3 == 0) console.log("Fizz");
-  else if (i % 5 == 0) console.log("Buzz");
-  else console.log(i);
+  // change the console.log with "var messaggio"
+  if (i % 3 == 0 && i % 5 == 0) messaggio = "FizzBuzz";
+  else if (i % 3 == 0) messaggio = "Fizz";
+  else if (i % 5 == 0) messaggio = "Buzz";
+  else messaggio = i;
 
+  //create div element on HTML and append
   const newBox = document.createElement("div");
-  newBox.classList.add("col-12", "ms-box");
-  newBox.innerHTML = i;
+
+  // add class list to "var newBox"
+  newBox.classList.add("box");
+  //
+  newBox.innerHTML = messaggio;
   box.append(newBox);
 }
